@@ -28,6 +28,9 @@ description: This data set is composed of eight bilateral silicon-probe multi-ce
 identifier: '000044'
 name: Diversity in neural firing dynamics supports both rigid and learned hippocampal
   sequences
+organism:
+- species: Rattus norvegicus
+  strain: Long Evans
 publications:
 - identifier: 'doi: 10.1126/science.aad1935'
   url: https://science.sciencemag.org/content/351/6280/1440
