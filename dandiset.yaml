@@ -9,8 +9,32 @@ access:
     schemaKey: ContactPoint
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: signal filtering technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 65708919583
+  numberOfFiles: 8
+  numberOfSubjects: 4
+  schemaKey: AssetsSummary
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
+    name: Brown rat
+    schemaKey: SpeciesType
+  variableMeasured:
+  - ElectricalSeries
+  - LFP
+  - Units
 citation: Grosmark, Andres D.; Buzsáki, György (2021) Diversity in neural firing dynamics
   supports both rigid and learned hippocampal sequences (Version draft) [Data set].
   DANDI archive. https://dandiarchive.org/dandiset/000044/draft
