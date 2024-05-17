@@ -5,7 +5,7 @@
 "blob":
 "4f5a84aa-a6e4-496a-9b23-535fa6fbd3ae",
 "created":
-"2021-07-02T21:31:00.968126+00:00",
+"2021-07-02T21:31:00.968126Z",
 "metadata":
 {
 "@context":
@@ -201,7 +201,7 @@
 ]
 },
 "modified":
-"2021-08-05T18:48:17.698977+00:00",
+"2021-08-05T18:48:17.698977Z",
 "path":
 "sub-Achilles/sub-Achilles_ses-Achilles-10252013_behavior+ecephys.nwb",
 "size":
@@ -213,7 +213,7 @@
 "blob":
 "75a14b2b-05f2-4bb1-abcb-e2af85579af2",
 "created":
-"2021-07-02T21:31:02.701512+00:00",
+"2021-07-02T21:31:02.701512Z",
 "metadata":
 {
 "@context":
@@ -409,7 +409,7 @@
 ]
 },
 "modified":
-"2021-08-05T18:48:17.759110+00:00",
+"2021-08-05T18:48:17.759110Z",
 "path":
 "sub-Achilles/sub-Achilles_ses-Achilles-11012013_behavior+ecephys.nwb",
 "size":
@@ -421,7 +421,7 @@
 "blob":
 "98b25cb1-310c-45f7-97cc-669fce2057b7",
 "created":
-"2021-07-02T21:31:00.164023+00:00",
+"2021-07-02T21:31:00.164023Z",
 "metadata":
 {
 "@context":
@@ -617,7 +617,7 @@
 ]
 },
 "modified":
-"2021-08-05T18:48:17.668855+00:00",
+"2021-08-05T18:48:17.668855Z",
 "path":
 "sub-Buddy/sub-Buddy_ses-Buddy-06272013_behavior+ecephys.nwb",
 "size":
@@ -629,7 +629,7 @@
 "blob":
 "ced32609-16ab-4c4c-991f-8fa9f40e9401",
 "created":
-"2021-07-02T21:31:01.878611+00:00",
+"2021-07-02T21:31:01.878611Z",
 "metadata":
 {
 "@context":
@@ -825,7 +825,7 @@
 ]
 },
 "modified":
-"2021-08-05T18:48:17.729002+00:00",
+"2021-08-05T18:48:17.729002Z",
 "path":
 "sub-Cicero/sub-Cicero_ses-Cicero-09012014_behavior+ecephys.nwb",
 "size":
@@ -837,7 +837,7 @@
 "blob":
 "6b8206bd-2829-48d9-95fc-e713cb3d363a",
 "created":
-"2021-07-02T21:31:03.575352+00:00",
+"2021-07-02T21:31:03.575352Z",
 "metadata":
 {
 "@context":
@@ -1033,7 +1033,7 @@
 ]
 },
 "modified":
-"2021-08-05T18:48:17.790905+00:00",
+"2021-08-05T18:48:17.790905Z",
 "path":
 "sub-Cicero/sub-Cicero_ses-Cicero-09102014_behavior+ecephys.nwb",
 "size":
@@ -1045,7 +1045,7 @@
 "blob":
 "12fdc641-306b-4c83-8112-8244e4a846e1",
 "created":
-"2021-07-02T21:31:04.577671+00:00",
+"2021-07-02T21:31:04.577671Z",
 "metadata":
 {
 "@context":
@@ -1241,7 +1241,7 @@
 ]
 },
 "modified":
-"2021-08-05T18:48:17.823060+00:00",
+"2021-08-05T18:48:17.823060Z",
 "path":
 "sub-Cicero/sub-Cicero_ses-Cicero-09172014_behavior+ecephys.nwb",
 "size":
@@ -1253,7 +1253,7 @@
 "blob":
 "810e9d83-a8f3-475a-9a71-634659b1c690",
 "created":
-"2021-07-02T21:31:05.450906+00:00",
+"2021-07-02T21:31:05.450906Z",
 "metadata":
 {
 "@context":
@@ -1449,7 +1449,7 @@
 ]
 },
 "modified":
-"2021-08-05T18:48:17.852910+00:00",
+"2021-08-05T18:48:17.852910Z",
 "path":
 "sub-Gatsby/sub-Gatsby_ses-Gatsby-08022013_behavior+ecephys.nwb",
 "size":
@@ -1461,7 +1461,7 @@
 "blob":
 "560a7710-50a3-4a16-9a5b-d079310eaa1f",
 "created":
-"2021-07-02T21:31:06.339842+00:00",
+"2021-07-02T21:31:06.339842Z",
 "metadata":
 {
 "@context":
@@ -1657,7 +1657,7 @@
 ]
 },
 "modified":
-"2021-08-05T18:48:17.882747+00:00",
+"2021-08-05T18:48:17.882747Z",
 "path":
 "sub-Gatsby/sub-Gatsby_ses-Gatsby-08282013_behavior+ecephys.nwb",
 "size":
