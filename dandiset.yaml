@@ -38,8 +38,8 @@ assetsSummary:
   - LFP
   - Units
 citation: Grosmark, Andres D.; Buzsáki, György (2025) Diversity in neural firing dynamics
-  supports both rigid and learned hippocampal sequences (Version draft) [Data set].
-  DANDI Archive. https://dandiarchive.org/dandiset/000044/draft
+  supports both rigid and learned hippocampal sequences (Version 0.250624.0426) [Data
+  set]. DANDI Archive. https://doi.org/10.48324/dandi.000044/0.250624.0426
 contributor:
 - affiliation:
   - identifier: https://ror.org/005dvqh91
@@ -93,13 +93,14 @@ description: This data set is composed of eight bilateral silicon-probe multi-ce
   epochs. In addition to hippocampal electrophysiological recordings, neck EMG and
   head-mounted accelerometer signals were recorded, and the animal’s position during
   MAZE running epochs was tracked via head-mounted LEDs.
+doi: 10.48324/dandi.000044/0.250624.0426
 ethicsApproval: []
-id: DANDI:000044/draft
+id: DANDI:000044/0.250624.0426
 identifier: DANDI:000044
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000044/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000044/0.250624.0426/assets.yaml
 name: Diversity in neural firing dynamics supports both rigid and learned hippocampal
   sequences
 publishedBy:
@@ -134,6 +135,6 @@ relatedResource:
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.4.4
-url: https://dandiarchive.org/dandiset/000044/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000044/0.250624.0426
+version: 0.250624.0426
 wasGeneratedBy: []
