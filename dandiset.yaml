@@ -8,6 +8,7 @@ access:
 - contactPoint:
     email: petersen.peter@gmail.com
     schemaKey: ContactPoint
+  schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
   approach:
@@ -36,25 +37,45 @@ assetsSummary:
   - ElectricalSeries
   - LFP
   - Units
-citation: Grosmark, Andres D.; Buzsáki, György (2024) Diversity in neural firing dynamics
+citation: Grosmark, Andres D.; Buzsáki, György (2025) Diversity in neural firing dynamics
   supports both rigid and learned hippocampal sequences (Version draft) [Data set].
-  DANDI archive. https://dandiarchive.org/dandiset/000044/draft
+  DANDI Archive. https://dandiarchive.org/dandiset/000044/draft
 contributor:
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/005dvqh91
+    name: New York University Langone Medical Center
+    schemaKey: Affiliation
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
+  email: grosmark@uchc.edu
+  identifier: 0000-0002-7185-3946
   includeInCitation: true
   name: Grosmark, Andres D.
   roleName:
   - dcite:Author
   - dcite:ContactPerson
   schemaKey: Person
-- affiliation: []
+- affiliation:
+  - identifier: https://ror.org/005dvqh91
+    name: New York University Langone Medical Center
+    schemaKey: Affiliation
+  - identifier: https://ror.org/0190ak572
+    name: New York University
+    schemaKey: Affiliation
   identifier: 0000-0002-3100-4800
   includeInCitation: true
   name: Buzsáki, György
   roleName:
   - dcite:Author
   schemaKey: Person
+- identifier: 0000-0002-0829-4790
+  name: Baker, Cody
+  roleName:
+  - dcite:DataCurator
+  schemaKey: Person
 dateCreated: '2020-11-14T23:49:43.396000+00:00'
+datePublished: '2025-06-24T04:26:53.259210+00:00'
 description: This data set is composed of eight bilateral silicon-probe multi-cellular
   electrophysiological recordings performed on four male Long-Evans rats in the Buzsáki
   lab at NYU. These recordings were performed to assess the effect of novel spatial
@@ -75,14 +96,24 @@ description: This data set is composed of eight bilateral silicon-probe multi-ce
 ethicsApproval: []
 id: DANDI:000044/draft
 identifier: DANDI:000044
-keywords: []
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/000044/versions/draft/assets/
 name: Diversity in neural firing dynamics supports both rigid and learned hippocampal
   sequences
-protocol: []
+publishedBy:
+  endDate: '2025-06-24T04:26:53.259210+00:00'
+  id: urn:uuid:30518aa9-d7d7-49df-b99e-b9eef47459c7
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2025-06-24T04:26:53.259210+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:3c93107b-18de-4a82-882a-1093c9e22714
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.1126/science.aad1935
   name: Diversity in neural firing dynamics supports both rigid and learned hippocampal
@@ -103,7 +134,6 @@ relatedResource:
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.4.4
-studyTarget: []
 url: https://dandiarchive.org/dandiset/000044/draft
 version: draft
 wasGeneratedBy: []
