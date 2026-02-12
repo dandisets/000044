@@ -10,6 +10,9 @@ about:
 - identifier: http://purl.obolibrary.org/obo/UBERON_0001954
   name: Ammon's horn
   schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/CL_0000598
+  name: pyramidal neuron
+  schemaKey: Anatomy
 access:
 - contactPoint:
     email: petersen.peter@gmail.com
@@ -80,9 +83,10 @@ contributor:
   roleName:
   - dcite:DataCurator
   schemaKey: Person
-- identifier: https://ror.org/01cwqze88
+- awardNumber: R01 MH054665
+  identifier: https://ror.org/04xeg9z08
   includeInCitation: false
-  name: National Institutes of Health
+  name: National Institute of Mental Health
   roleName:
   - dcite:Funder
   schemaKey: Organization
@@ -95,6 +99,12 @@ contributor:
 - identifier: https://ror.org/02a7hjv13
   includeInCitation: false
   name: G. Harold and Leila Y. Mathers Charitable Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: NS034994
+  includeInCitation: false
+  name: National Institute of Neurological Disorders and Stroke
   roleName:
   - dcite:Funder
   schemaKey: Organization
