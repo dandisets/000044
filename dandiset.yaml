@@ -21,6 +21,8 @@ access:
   status: dandi:OpenAccess
 assetsSummary:
   approach:
+  - name: behavioral approach
+    schemaKey: ApproachType
   - name: electrophysiological approach
     schemaKey: ApproachType
   dataStandard:
@@ -30,22 +32,32 @@ assetsSummary:
   measurementTechnique:
   - name: signal filtering technique
     schemaKey: MeasurementTechniqueType
-  - name: multi electrode extracellular electrophysiology recording technique
+  - name: analytical technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: surgical technique
     schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 65708919583
-  numberOfFiles: 8
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 57269953253
+  numberOfFiles: 7
   numberOfSubjects: 4
   schemaKey: AssetsSummary
   species:
   - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
-    name: Brown rat
+    name: Rattus norvegicus - Norway rat
     schemaKey: SpeciesType
   variableMeasured:
+  - Units
+  - SpatialSeries
+  - ElectrodeGroup
+  - ProcessingModule
   - ElectricalSeries
   - LFP
-  - Units
+  - Position
 citation: Grosmark, Andres D.; Buzsáki, György (2026) Diversity in neural firing dynamics
   supports both rigid and learned hippocampal sequences (Version draft) [Data set].
   DANDI Archive. https://dandiarchive.org/dandiset/000044/draft
