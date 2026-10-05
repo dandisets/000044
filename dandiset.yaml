@@ -2,7 +2,7 @@
 # It can be edited online at https://dandiarchive.org/dandiset/000044
 # and obtained from the dandiarchive.
 '@context': 
-  https://raw.githubusercontent.com/dandi/schema/master/releases/0.4.4/context.json
+  https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json
 about:
 - identifier: http://purl.obolibrary.org/obo/UBERON_0003881
   name: CA1 field of hippocampus
@@ -42,8 +42,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 57269953253
-  numberOfFiles: 7
+  numberOfBytes: 65708964895
+  numberOfFiles: 8
   numberOfSubjects: 4
   schemaKey: AssetsSummary
   species:
@@ -178,7 +178,7 @@ relatedResource:
   url: https://www.nature.com/articles/srep32193
 repository: https://dandiarchive.org
 schemaKey: Dandiset
-schemaVersion: 0.4.4
+schemaVersion: 0.7.0
 url: https://dandiarchive.org/dandiset/000044/draft
 version: draft
 wasGeneratedBy: []
