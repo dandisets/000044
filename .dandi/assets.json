@@ -1759,11 +1759,11 @@
 },
 {
 "asset_id":
-"93569d6c-781f-4422-938e-e935a62863de",
+"394f0485-6b8c-4796-a4e9-4f5e190c2a85",
 "blob":
-"0a172fd9-8a8d-403f-bacc-2c72488ea259",
+"dcc0eb65-288a-461a-a74d-e25b8aee4c60",
 "created":
-"2026-07-27T15:29:49.907646Z",
+"2026-11-05T18:28:09.775781Z",
 "metadata":
 {
 "@context":
@@ -1793,54 +1793,45 @@
 }
 ],
 "blobDateModified":
-"2026-07-27T10:49:43.459762-04:00",
+"2026-11-04T16:13:37.365269-05:00",
 "contentSize":
-7943576286,
+8438208059,
 "contentUrl":
 [
-"https://api.dandiarchive.org/api/assets/93569d6c-781f-4422-938e-e935a62863de/download/",
-"https://dandiarchive.s3.amazonaws.com/blobs/0a1/72f/0a172fd9-8a8d-403f-bacc-2c72488ea259"
+"https://api.dandiarchive.org/api/assets/394f0485-6b8c-4796-a4e9-4f5e190c2a85/download/",
+"https://dandiarchive.s3.amazonaws.com/blobs/dcc/0eb/dcc0eb65-288a-461a-a74d-e25b8aee4c60"
 ],
 "dateModified":
-"2026-07-27T11:19:44.990009-04:00",
-"datePublished":
-"2026-10-05T21:01:06.447770+00:00",
+"2026-11-05T13:17:54.619888-05:00",
 "digest":
 {
 "dandi:dandi-etag":
-"5571dd81460d0e3681c06a2a9b654a42-119",
+"81401f26d9b139f4d6375612104c10d1-126",
 "dandi:sha2-256":
-"88db268fb66b7e592591099bf3ef1cc8e7845e903c180c4c05bfb919fecd41ea"
+"ee2ebc89d1176ded0cd5b20b733288b176fa2d35211e37b5d93e1c0c0a737efb"
 },
 "encodingFormat":
 "application/x-nwb",
 "id":
-"dandiasset:93569d6c-781f-4422-938e-e935a62863de",
+"dandiasset:394f0485-6b8c-4796-a4e9-4f5e190c2a85",
 "identifier":
-"93569d6c-781f-4422-938e-e935a62863de",
+"394f0485-6b8c-4796-a4e9-4f5e190c2a85",
+"keywords":
+[
+"hippocampus",
+"CA1",
+"novelty",
+"spatial learning",
+"sleep",
+"hippocampal sequences",
+"place cells",
+"silicon probe"
+],
 "measurementTechnique":
 [
 {
 "name":
-"signal filtering technique",
-"schemaKey":
-"MeasurementTechniqueType"
-},
-{
-"name":
-"spike sorting technique",
-"schemaKey":
-"MeasurementTechniqueType"
-},
-{
-"name":
 "analytical technique",
-"schemaKey":
-"MeasurementTechniqueType"
-},
-{
-"name":
-"multi electrode extracellular electrophysiology recording technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
@@ -1852,55 +1843,64 @@
 },
 {
 "name":
+"spike sorting technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
 "surgical technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"signal filtering technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"multi electrode extracellular electrophysiology recording technique",
 "schemaKey":
 "MeasurementTechniqueType"
 }
 ],
 "path":
 "sub-Gatsby/sub-Gatsby_ses-Gatsby-08022013_behavior+ecephys.nwb",
-"publishedBy":
-{
-"endDate":
-"2026-10-05T21:01:06.447770+00:00",
-"id":
-"urn:uuid:6555ff26-a5ba-44c4-8c2d-beb54ebba770",
-"name":
-"DANDI publish",
-"schemaKey":
-"PublishActivity",
-"startDate":
-"2026-10-05T21:01:06.447770+00:00",
-"wasAssociatedWith":
+"relatedResource":
 [
 {
-"id":
-"urn:uuid:430c4c1f-ae86-45fb-9b94-c59846da37b4",
 "identifier":
-"RRID:SCR_017571",
-"name":
-"DANDI API",
+"https://doi.org/10.1126/science.aad1935",
+"relation":
+"dcite:IsDescribedBy",
 "schemaKey":
-"Software",
-"version":
-"0.1.0"
-}
-]
+"Resource"
 },
-"relatedResource":
-[],
+{
+"identifier":
+"https://doi.org/10.1038/srep32193",
+"relation":
+"dcite:IsDescribedBy",
+"schemaKey":
+"Resource"
+},
+{
+"identifier":
+"https://doi.org/10.6080/K0862DC5",
+"relation":
+"dcite:IsDescribedBy",
+"schemaKey":
+"Resource"
+}
+],
 "schemaKey":
 "Asset",
 "schemaVersion":
 "0.7.0",
 "variableMeasured":
 [
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"ElectricalSeries"
-},
 {
 "schemaKey":
 "PropertyValue",
@@ -1917,25 +1917,31 @@
 "schemaKey":
 "PropertyValue",
 "value":
-"ElectrodeGroup"
-},
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"SpatialSeries"
-},
-{
-"schemaKey":
-"PropertyValue",
-"value":
 "Position"
 },
 {
 "schemaKey":
 "PropertyValue",
 "value":
+"ElectrodeGroup"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
 "LFP"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectricalSeries"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"SpatialSeries"
 }
 ],
 "wasAttributedTo":
@@ -1958,7 +1964,7 @@
 }
 },
 "genotype":
-"Wild type",
+"wild type",
 "identifier":
 "Gatsby",
 "schemaKey":
@@ -1980,6 +1986,13 @@
 "Rattus norvegicus - Norway rat",
 "schemaKey":
 "SpeciesType"
+},
+"strain":
+{
+"name":
+"Long-Evans",
+"schemaKey":
+"StrainType"
 }
 }
 ],
@@ -1987,7 +2000,7 @@
 [
 {
 "description":
-"This data set is composed of eight bilateral silicon-probe multi-cellular electrophysiological ",
+"Rat Gatsby: a long PRE rest/sleep epoch in the home cage, a novel MAZE epoch running on a wooden 1.6 m linear platform, water-rewarded at both ends ('1.6m Linear Maze') in a novel room, then a long POST rest/sleep epoch in the home cage, with LFP and units from two silicon probes in the CA1 pyramidal layer of both hemispheres, neck EMG and a head-mounted accelerometer. The three recordings were concatenated by the lab, so all times are seconds into the concatenated recording. The time of day the session started is not recorded; the start time is midnight of the session date.",
 "endDate":
 "2013-08-02T08:53:22.400000-04:00",
 "identifier":
@@ -2003,15 +2016,15 @@
 "description":
 "Metadata generated by DANDI cli",
 "endDate":
-"2026-07-27T11:19:44.989996-04:00",
+"2026-11-05T13:17:54.619880-05:00",
 "id":
-"urn:uuid:fdee3f20-6e1c-44e8-a506-2d3bb5ed5e3d",
+"urn:uuid:4effbf32-4b5a-475e-9f38-e4215f8f88f5",
 "name":
 "Metadata generation",
 "schemaKey":
 "Activity",
 "startDate":
-"2026-07-27T11:19:44.916115-04:00",
+"2026-11-05T13:17:54.618400-05:00",
 "wasAssociatedWith":
 [
 {
@@ -2024,18 +2037,18 @@
 "url":
 "https://github.com/dandi/dandi-cli",
 "version":
-"0.76.7"
+"0.81.0"
 }
 ]
 }
 ]
 },
 "modified":
-"2026-10-05T21:01:06.450785Z",
+"2026-11-05T18:28:09.775802Z",
 "path":
 "sub-Gatsby/sub-Gatsby_ses-Gatsby-08022013_behavior+ecephys.nwb",
 "size":
-7943576286
+8438208059
 },
 {
 "asset_id":
