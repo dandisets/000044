@@ -2052,11 +2052,11 @@
 },
 {
 "asset_id":
-"402f78e1-9e7d-486c-8822-93d538ed6ccc",
+"db52fc0e-391b-49ff-abf8-8c836c7534c9",
 "blob":
-"16f07f43-77a5-4f0b-a398-858141bc44a5",
+"685eb9d1-c9a2-4edd-a471-9f521586ea13",
 "created":
-"2026-07-27T15:41:25.551623Z",
+"2026-11-05T18:39:47.873303Z",
 "metadata":
 {
 "@context":
@@ -2086,42 +2086,45 @@
 }
 ],
 "blobDateModified":
-"2026-07-27T11:00:54.390312-04:00",
+"2026-11-04T12:55:10.675742-05:00",
 "contentSize":
-8439011642,
+9749171111,
 "contentUrl":
 [
-"https://api.dandiarchive.org/api/assets/402f78e1-9e7d-486c-8822-93d538ed6ccc/download/",
-"https://dandiarchive.s3.amazonaws.com/blobs/16f/07f/16f07f43-77a5-4f0b-a398-858141bc44a5"
+"https://api.dandiarchive.org/api/assets/db52fc0e-391b-49ff-abf8-8c836c7534c9/download/",
+"https://dandiarchive.s3.amazonaws.com/blobs/685/eb9/685eb9d1-c9a2-4edd-a471-9f521586ea13"
 ],
 "dateModified":
-"2026-07-27T11:30:04.630391-04:00",
-"datePublished":
-"2026-10-05T21:01:06.457634+00:00",
+"2026-11-05T13:28:25.049174-05:00",
 "digest":
 {
 "dandi:dandi-etag":
-"5369967929526323ffabf362269ebd55-126",
+"1492b266a33544c9657310ad7484c2b1-146",
 "dandi:sha2-256":
-"927e80767a882042d4c311b4ca6c46b409f04a901da825d5d36631b5d66d57c8"
+"f1ed0318de17b2bb9db05175e99cd14a1fea04789bf935b97e09ecad4b3bdf31"
 },
 "encodingFormat":
 "application/x-nwb",
 "id":
-"dandiasset:402f78e1-9e7d-486c-8822-93d538ed6ccc",
+"dandiasset:db52fc0e-391b-49ff-abf8-8c836c7534c9",
 "identifier":
-"402f78e1-9e7d-486c-8822-93d538ed6ccc",
+"db52fc0e-391b-49ff-abf8-8c836c7534c9",
+"keywords":
+[
+"hippocampus",
+"CA1",
+"novelty",
+"spatial learning",
+"sleep",
+"hippocampal sequences",
+"place cells",
+"silicon probe"
+],
 "measurementTechnique":
 [
 {
 "name":
-"signal filtering technique",
-"schemaKey":
-"MeasurementTechniqueType"
-},
-{
-"name":
-"behavioral technique",
+"analytical technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
@@ -2133,7 +2136,7 @@
 },
 {
 "name":
-"surgical technique",
+"signal filtering technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
@@ -2145,73 +2148,52 @@
 },
 {
 "name":
-"analytical technique",
+"surgical technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"behavioral technique",
 "schemaKey":
 "MeasurementTechniqueType"
 }
 ],
 "path":
 "sub-Gatsby/sub-Gatsby_ses-Gatsby-08282013_behavior+ecephys.nwb",
-"publishedBy":
-{
-"endDate":
-"2026-10-05T21:01:06.457634+00:00",
-"id":
-"urn:uuid:e109909a-25f3-4cf8-905c-4dbb67f4ce3d",
-"name":
-"DANDI publish",
-"schemaKey":
-"PublishActivity",
-"startDate":
-"2026-10-05T21:01:06.457634+00:00",
-"wasAssociatedWith":
+"relatedResource":
 [
 {
-"id":
-"urn:uuid:3be71861-f1eb-4a05-842b-7e58fb6e8098",
 "identifier":
-"RRID:SCR_017571",
-"name":
-"DANDI API",
+"https://doi.org/10.1126/science.aad1935",
+"relation":
+"dcite:IsDescribedBy",
 "schemaKey":
-"Software",
-"version":
-"0.1.0"
-}
-]
+"Resource"
 },
-"relatedResource":
-[],
+{
+"identifier":
+"https://doi.org/10.1038/srep32193",
+"relation":
+"dcite:IsDescribedBy",
+"schemaKey":
+"Resource"
+},
+{
+"identifier":
+"https://doi.org/10.6080/K0862DC5",
+"relation":
+"dcite:IsDescribedBy",
+"schemaKey":
+"Resource"
+}
+],
 "schemaKey":
 "Asset",
 "schemaVersion":
 "0.7.0",
 "variableMeasured":
 [
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"ElectrodeGroup"
-},
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"LFP"
-},
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"ElectricalSeries"
-},
-{
-"schemaKey":
-"PropertyValue",
-"value":
-"SpatialSeries"
-},
 {
 "schemaKey":
 "PropertyValue",
@@ -2228,7 +2210,31 @@
 "schemaKey":
 "PropertyValue",
 "value":
+"ElectricalSeries"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
 "ProcessingModule"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"LFP"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectrodeGroup"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"SpatialSeries"
 }
 ],
 "wasAttributedTo":
@@ -2251,7 +2257,7 @@
 }
 },
 "genotype":
-"Wild type",
+"wild type",
 "identifier":
 "Gatsby",
 "schemaKey":
@@ -2273,6 +2279,13 @@
 "Rattus norvegicus - Norway rat",
 "schemaKey":
 "SpeciesType"
+},
+"strain":
+{
+"name":
+"Long-Evans",
+"schemaKey":
+"StrainType"
 }
 }
 ],
@@ -2280,7 +2293,7 @@
 [
 {
 "description":
-"This data set is composed of eight bilateral silicon-probe multi-cellular electrophysiological ",
+"Rat Gatsby: a long PRE rest/sleep epoch in the home cage, a novel MAZE epoch running on a wooden 1 m diameter circular platform, water-rewarded at a predetermined location; the rat was gently encouraged to run in one direction ('Circular Maze') in a novel room, then a long POST rest/sleep epoch in the home cage, with LFP and units from two silicon probes in the CA1 pyramidal layer of both hemispheres, neck EMG and a head-mounted accelerometer. The three recordings were concatenated by the lab, so all times are seconds into the concatenated recording. The time of day the session started is not recorded; the start time is midnight of the session date.",
 "endDate":
 "2013-08-28T09:49:07.900000-04:00",
 "identifier":
@@ -2296,15 +2309,15 @@
 "description":
 "Metadata generated by DANDI cli",
 "endDate":
-"2026-07-27T11:30:04.630383-04:00",
+"2026-11-05T13:28:25.049165-05:00",
 "id":
-"urn:uuid:3337976b-ae31-404c-b3ac-80c9ac2fb29a",
+"urn:uuid:e160f2a1-b9d5-4964-80ac-5f1fc83056a4",
 "name":
 "Metadata generation",
 "schemaKey":
 "Activity",
 "startDate":
-"2026-07-27T11:30:04.580532-04:00",
+"2026-11-05T13:28:24.615753-05:00",
 "wasAssociatedWith":
 [
 {
@@ -2317,17 +2330,17 @@
 "url":
 "https://github.com/dandi/dandi-cli",
 "version":
-"0.76.7"
+"0.81.0"
 }
 ]
 }
 ]
 },
 "modified":
-"2026-10-05T21:01:06.460440Z",
+"2026-11-05T18:39:47.873319Z",
 "path":
 "sub-Gatsby/sub-Gatsby_ses-Gatsby-08282013_behavior+ecephys.nwb",
 "size":
-8439011642
+9749171111
 }
 ]
