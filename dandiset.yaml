@@ -59,8 +59,8 @@ assetsSummary:
   - ElectricalSeries
   - SpatialSeries
 citation: Grosmark, Andres D.; Buzsáki, György (2026) Diversity in neural firing dynamics
-  supports both rigid and learned hippocampal sequences (Version draft) [Data set].
-  DANDI Archive. https://dandiarchive.org/dandiset/000044/draft
+  supports both rigid and learned hippocampal sequences (Version 0.261106.0236) [Data
+  set]. DANDI Archive. https://doi.org/10.48324/dandi.000044/0.261106.0236
 contributor:
 - affiliation:
   - identifier: https://ror.org/005dvqh91
@@ -127,6 +127,7 @@ contributor:
   - dcite:Funder
   schemaKey: Organization
 dateCreated: '2020-11-14T23:49:43.396000+00:00'
+datePublished: '2026-11-06T02:36:27.490563+00:00'
 description: This data set is composed of eight bilateral silicon-probe multi-cellular
   electrophysiological recordings performed on four male Long-Evans rats in the Buzsáki
   lab at NYU. These recordings were performed to assess the effect of novel spatial
@@ -144,8 +145,9 @@ description: This data set is composed of eight bilateral silicon-probe multi-ce
   epochs. In addition to hippocampal electrophysiological recordings, neck EMG and
   head-mounted accelerometer signals were recorded, and the animal’s position during
   MAZE running epochs was tracked via head-mounted LEDs.
+doi: 10.48324/dandi.000044/0.261106.0236
 ethicsApproval: []
-id: DANDI:000044/draft
+id: DANDI:000044/0.261106.0236
 identifier: DANDI:000044
 keywords:
 - Place cell
@@ -157,9 +159,21 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000044/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000044/0.261106.0236/assets.yaml
 name: Diversity in neural firing dynamics supports both rigid and learned hippocampal
   sequences
+publishedBy:
+  endDate: '2026-11-06T02:36:27.490563+00:00'
+  id: urn:uuid:f914eb6d-5770-414b-bf07-193e55bedf42
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-11-06T02:36:27.490563+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:04cc1573-30df-42bc-8ac1-16a47ad81e84
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.1126/science.aad1935
   name: Diversity in neural firing dynamics supports both rigid and learned hippocampal
@@ -177,9 +191,63 @@ relatedResource:
   resourceType: dcite:JournalArticle
   schemaKey: Resource
   url: https://www.nature.com/articles/srep32193
+releaseNotes: "## Changes since version 0.261005.2101\n\nAll 8 files were re-converted
+  from the lab's source files (the `<session>_sessInfo.mat` files of CRCNS hc-11)
+  with a new conversion (NeuroConv; code in [catalystneuro/buzsaki-lab-to-nwb](https://github.com/catalystneuro/buzsaki-lab-to-nwb),
+  pull requests [#89](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/89),
+  [#97](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/97) and [#100](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/100)),
+  fixing problems found by a reproduction attempt ([issue #76](https://github.com/catalystneuro/buzsaki-lab-to-nwb/issues/76)).\n
+  \n**Corrections**\n\n- **Sleep states.** The earlier `processing/behavior/states`
+  table was not the scoring the paper used: it was buzcode's automatic 3-state scoring
+  (WAKE, NREM, REM) from 2019. The files now hold the lab's own 5-state scoring (Wake,
+  Drowsy, NREM, Intermediate, REM) from sessInfo in `sleep_states`, the scoring of
+  the paper. The 2019 scoring is kept as `sleep_states_buzcode`, and each table's
+  description says which is which. With the lab's scoring, the paper's POST-over-PRE
+  replay result reproduces; with the 2019 scoring it does not.\n- **Units.** Unit
+  ids are the lab's SpikeIDs. The earlier `shank_id` was the cluster number minus
+  2, not a shank. Units now have `spike_group` (the shank), `cluster_id`, `cell_type`
+  and `hemisphere`, with links to their electrode group and electrodes, and a spike
+  time resolution of 1/20,000 s. They were checked against the `.clu`/`.res` files.\n
+  - **Bad channels.** `bad_electrode` now comes from the skip flags of the lab's `.xml`
+  files. The earlier flags were off by one channel and included extra channels (for
+  example Gatsby_08282013: channels 35, 45 and 47, where the `.xml` skips 44 and 46).\n
+  - **Descriptions and metadata.** Session and device descriptions are complete; they
+  were cut after the first line. A subject weight of 0.3 kg, which is not in the source,
+  was removed. Achilles' sessions have their start time from the lab's `.meta` file;
+  the other sessions are dated at midnight, as their descriptions say. The institution
+  is written in full (New York University).\n\n**Additions**\n\n- **Laps.** On the
+  linear tracks, laps from the lab's `position_info.mat` are a trials table with a
+  `direction` column: \"in\" (toward increasing linearized position), \"out\" (toward
+  decreasing position), or \"unlabelled\" for laps the lab marked neither way.\n-
+  **EMG and accelerometer** from the `.eeg` files, as time series at 1250 Hz, using
+  the channel map of the lab's `Channel_Orderings.pdf` (Buddy's channel order differs
+  and is handled). The accelerometer description notes it has no valid data during
+  MAZE for Buddy, Gatsby and Achilles.\n- **Electrodes.** There is one device per
+  probe and hemisphere (Buzsaki64 or Buzsaki64sp), and the electrode groups are named
+  by side and shank. The extra sites of Achilles and Cicero are in their own groups,
+  described as sites above CA1 spaced 1.25 mm apart rather than as shanks. The electrodes
+  have `hemisphere`, `spike_group`, `channel_id` and `shank_electrode_number` columns,
+  and their location is CA1 of the hippocampus.\n- **Position.** Each maze type has
+  its own description. On the circular track, the reward is at linearized position
+  0 and the rat runs toward decreasing position. The linearized position is NaN outside
+  running, which the description now says.\n- **Epochs.** Gatsby_08022013 keeps the
+  lab's end of POST, and the epochs description notes that its recording continues
+  to 32,002.4 s.\n- **Ontology terms** (HERD, in `/general/external_resources`): the
+  experimenters' ORCIDs, the institution's ROR, and terms for the species, sex, CA1
+  and cell types.\n- **HED annotations** for the sleep states, with the SCORE library
+  for REM sleep: Wake is `Awake`; NREM and Intermediate (a sub-type of NREM in the
+  CRCNS description) are `Asleep`; REM is `Asleep, sc:Sleep-stage-REM`.\n- **Links.**
+  The CRCNS hc-11 DOI is in the related publications.\n\n**Known gaps**\n\n- **Wide-band
+  signal.** The source holds no wide-band data for MAZE, and none for most rats.\n
+  - **Electrode positions.** The electrode x/y positions are left out. The only probe
+  layouts on the lab's share are generic and do not match the lab's channel order.\n
+  - **EMG and accelerometer scaling.** The EMG and accelerometer are in raw int16
+  units, because their gains and the accelerometer axes are not documented.\n- **Laps
+  on the circular track.** The circular-track sessions have no lap table, because
+  the lab's laps cover the linear tracks only."
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
-url: https://dandiarchive.org/dandiset/000044/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000044/0.261106.0236
+version: 0.261106.0236
 wasGeneratedBy: []
